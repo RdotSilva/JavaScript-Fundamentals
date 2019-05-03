@@ -5,6 +5,8 @@ thisIsHoisted();
 thisIsNotHoisted(); // error not defined
 isThisHoisted(); // error type error not a function
 
+thisIsAlsoAVariable = 'hello'; // global variable
+
 const thisIsAConst = 50;
 
 // thisIsAConst++; // error
