@@ -6,3 +6,20 @@ const sayHello = (function() {
 	}
 	return sayHello;
 })();
+
+const counter = (function() {
+	let count = 0;
+
+	return {
+		inc: function() {
+			count++;
+		},
+		get: function() {
+			console.log(count);
+		}
+	};
+})();
+
+counter.get();
+counter.inc();
+counter.get();
