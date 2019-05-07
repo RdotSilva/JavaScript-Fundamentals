@@ -25,4 +25,9 @@ class MySet extends Set {
 		super(arr);
 		this.originalArray = arr;
 	}
+
+	add(val) {
+		super.add(val);
+		console.log(`added ${val} to the set!`);
+	}
 }
