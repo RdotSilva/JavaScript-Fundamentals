@@ -30,4 +30,8 @@ class MySet extends Set {
 		super.add(val);
 		console.log(`added ${val} to the set!`);
 	}
+
+	toArray() {
+		return Array.from(this);
+	}
 }
