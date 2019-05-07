@@ -3,7 +3,9 @@ class Set {
 		this.arr = arr;
 	}
 
-	add(val) {}
+	add(val) {
+		if (!this.has(val)) this.arr.push(val);
+	}
 
 	delete(val) {}
 
