@@ -14,4 +14,8 @@ class Set {
 	has(val) {
 		return this.arr.includes(val);
 	}
+
+	get size() {
+		return this.arr.length;
+	}
 }
