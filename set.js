@@ -7,5 +7,7 @@ class Set {
 
 	delete(val) {}
 
-	has(val) {}
+	has(val) {
+		return this.arr.includes(val);
+	}
 }
