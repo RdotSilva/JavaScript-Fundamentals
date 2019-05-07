@@ -19,3 +19,10 @@ class Set {
 		return this.arr.length;
 	}
 }
+
+class MySet extends Set {
+	constructor(arr) {
+		super(arr);
+		this.originalArray = arr;
+	}
+}
