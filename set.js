@@ -34,4 +34,8 @@ class MySet extends Set {
 	toArray() {
 		return Array.from(this);
 	}
+
+	reset() {
+		return new MySef(this.originalArray);
+	}
 }
