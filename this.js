@@ -10,10 +10,12 @@ const friend = {
 	name: 'david'
 };
 
-const greet = person.greet;
+// const greet = person.greet;
 
 friend.greet = person.greet;
 
 friend.greet(); // this.name = david
 
-greet(); // this = global object with no name key
+const greet = person.greet.bind({ name: 'this is a bound object' });
+
+greet();
