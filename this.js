@@ -17,5 +17,5 @@ friend.greet = person.greet;
 friend.greet(); // this.name = david
 
 const greet = person.greet.bind({ name: 'this is a bound object' });
-
+person.greet.call({ name: 'this is a bound object' });
 greet();
